@@ -1,8 +1,7 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
-        "module": "ESNext",
-        "moduleResolution": "node",
+        "module": "nodenext",
         "rootDir": "src",
         "outDir": "dist",
         "strict": true,
