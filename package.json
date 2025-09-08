@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "npx tsx ./src/index.ts",
+    "dev": "nodemon",
     "start": "npx tsx ./src/index.ts",
     "build": "tsup"
   },
@@ -13,7 +13,7 @@
   "license": "ISC",
   "type": "module",
   "engines": {
-    "node": ">=14"
+    "node": ">=21"
   },
   "devDependencies": {
     "@types/node": "^24.2.0",
