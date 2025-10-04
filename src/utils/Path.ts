@@ -1,0 +1,5 @@
+import path, { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+export const _filename = fileURLToPath(import.meta.url);
+export const _dirname = dirname(path.join(_filename, "..")); // ap cb
