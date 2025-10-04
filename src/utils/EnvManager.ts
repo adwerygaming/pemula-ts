@@ -3,6 +3,9 @@ import "dotenv/config";
 import { z } from "zod"
 import Tags from "./Tags.js"
 
+// Schema for .env file,
+// Make sure to sync this.
+// Default value are: z.string()
 const envSchema = z.object({
     NODE_ENV: z.enum(["PROD", "DEV"]).optional(),
 })
