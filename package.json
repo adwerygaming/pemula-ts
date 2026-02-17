@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "start": "npx tsx ./src/index.ts",
+    "lint": "eslint .",
     "build": "tsup"
   },
   "keywords": [],
@@ -17,11 +18,16 @@
   },
   "devDependencies": {
     "@types/node": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.0",
+    "@typescript-eslint/parser": "^8.56.0",
     "concurrently": "^9.2.1",
+    "eslint": "^9.39.2",
+    "jiti": "^2.6.1",
     "nodemon": "^3.1.11",
     "tsup": "^8.5.1",
     "tsx": "^4.21.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.0"
   },
   "dependencies": {
     "dotenv": "^17.3.1",
