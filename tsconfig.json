@@ -9,6 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "types": ["node"],
 
     "noUnusedLocals": true,
     "noUnusedParameters": true
