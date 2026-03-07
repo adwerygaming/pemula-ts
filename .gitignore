@@ -131,10 +131,14 @@ dist
 
 # MasDepan's list
 db/*.sqlite
-package-lock.json
 Summary.txt
 *.sqlite
 test/*
 test/
+
 # This line was added by CommitAI.
 .commitai
+
+# This line was added by .commitai
+# This is a directory for storing commitai stuff to make commit generation better
+.commitai/*

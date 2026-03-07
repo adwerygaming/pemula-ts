@@ -7,14 +7,14 @@ const RawTags = {
   Axios: { colors: ['#A463BF', '#8E43AD'] },
 };
 
-type TagConfig = {colors: string[]};
+type TagConfig = { colors: string[] };
 type RawTagMap = typeof RawTags;
 
 const tags = Object.fromEntries(
-  (Object.entries(RawTags) as [keyof RawTagMap, TagConfig][]).map(([key, {colors}]) => {
+  (Object.entries(RawTags) as [keyof RawTagMap, TagConfig][]).map(([key, { colors }]) => {
     const fn = gradient(colors);
     return [key, fn(key)];
   })
-) as {[K in keyof RawTagMap]: string};
+) as { [K in keyof RawTagMap]: string };
 
 export default tags;
